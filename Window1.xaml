@@ -1,0 +1,155 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="WpfRenderT.Window1"
+	x:Name="Window"
+	Width="Auto" Height="Auto" WindowStyle="SingleBorderWindow" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+
+    <Grid x:Name="LayoutRoot">
+        <StackPanel Margin="0,0,0,0" >
+            <StackPanel Width="Auto" Height="Auto" Orientation="Horizontal">
+                
+                <Canvas x:Name="cvsDraw" Height="300">
+                    <Image x:Name="ImageViewer1" Source="Charge.jpg" Width="860" Height="300" Stretch="Fill" StretchDirection="Both"/>
+                </Canvas>
+            </StackPanel>
+            <Label HorizontalAlignment="Center" x:Name="lblInfo" VerticalAlignment="Center" Width="Auto" Height="Auto" Content=""/>
+            <StackPanel Margin="10,0,0,0" Width="Auto" Height="Auto" Orientation="Horizontal">
+                <Border Margin="1,1,1,1" Width="Auto" Height="Auto" BorderBrush="#55000000" BorderThickness="1,1,1,1" CornerRadius="4,4,4,4">
+                    <StackPanel Width="Auto" Height="Auto">
+                        <StackPanel Width="Auto" Height="Auto" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+                            <Border x:Name="btnRect" Width="60" Height="Auto" BorderBrush="#FF000000" BorderThickness="0,0,0,1" >
+                                <Label Content="Rectangle"/>
+                            </Border>
+                            <Border x:Name="btnLine" Width="60" Height="Auto" BorderBrush="#FF000000" BorderThickness="1,0,0,1" >
+                                <Label Content="Line"/>
+                            </Border>
+                            <Border x:Name="btnEllipse" Width="60" Height="Auto" BorderBrush="#FF000000" BorderThickness="1,0,0,1">
+                                <Label Content="Ellipse"/>
+                            </Border>
+                            <Border x:Name="btnText" Width="60" Height="Auto" BorderBrush="#FF000000" BorderThickness="1,0,0,1" >
+                                <Label Content="Text"/>
+                            </Border>
+                            <Border x:Name="btnExcEllipse" Width="60" Height="Auto" BorderBrush="#FF000000" BorderThickness="1,0,0,1">
+                                <Label Content="ExEllipse"/>
+                            </Border>
+                            <Border x:Name="btnExcBarbell" Width="60" Height="Auto" BorderBrush="#FF000000" BorderThickness="1,0,0,1">
+                                <Label Content="Barbell"/>
+                            </Border>
+                        </StackPanel>
+                        <StackPanel Width="Auto" Height="Auto">
+                            <StackPanel HorizontalAlignment="Center" Margin="0,4,0,4" Width="Auto" Height="Auto" Orientation="Horizontal">
+                                <CheckBox Margin="4,0,4,0" x:Name="chkPatSpot" Width="Auto" Height="Auto" Content="Spot" Background="{x:Null}" Foreground="#FF000000" IsChecked="True"/>
+                                <CheckBox Width="Auto" Height="Auto" Content="Rect" Margin="4,0,4,0" x:Name="chkPatRect"/>
+                                <CheckBox Width="Auto" Height="Auto" Content="Circ" Margin="4,0,4,0" x:Name="chkPatCirc"/>
+                                <CheckBox Width="Auto" Height="Auto" Content="Arc" Margin="4,0,4,0" x:Name="chkPatArc"/>
+                            </StackPanel>
+                            <StackPanel x:Name="stkPatSliders" HorizontalAlignment="Left" Width="Auto" Height="Auto">
+                                <StackPanel Margin="0,4,0,4" Width="Auto" Height="Auto" Orientation="Horizontal">
+                                    <Label Margin="4,0,4,0" Width="60" Height="Auto" Content="SpotSize"/>
+                                    <Slider x:Name="sldPatSpotSz" Width="160" Height="Auto" LargeChange="10" Maximum="500" Minimum="50" SmallChange="1" Value="100"/>
+                                    <Label  Margin="4,0,4,0" Width="60" Height="Auto" Content="0"/>
+                                </StackPanel>
+                                <StackPanel Width="Auto" Height="Auto" Orientation="Horizontal" Margin="0,4,0,4">
+                                    <Label Margin="4,0,4,0" Width="60" Height="Auto" Content="Spacing"/>
+                                    <Slider Width="160" Height="Auto" x:Name="sldPatSpotSpace" Maximum="3" Minimum="0.5" Value="2"/>
+                                    <Label  Margin="4,0,4,0" Width="60" Height="Auto" Content="0"/>
+                                </StackPanel>
+                                <StackPanel Width="Auto" Height="Auto" Orientation="Horizontal">
+                                    <Label Margin="4,0,4,0" Width="60" Height="Auto" Content="GridSize" BorderThickness="0,4,0,4"/>
+                                    <Slider Width="160" Height="Auto" x:Name="sldPatGridSz" Maximum="5" Minimum="1" SmallChange="1" Value="1"/>
+                                    <Label  Margin="4,0,4,0" Width="60" Height="Auto" Content="0"/>
+                                </StackPanel>
+                                <StackPanel Width="Auto" Height="Auto" Orientation="Horizontal" Margin="0,4,0,4">
+                                    <Label Margin="4,0,4,0" Width="60" Height="Auto" Content="InDiam"/>
+                                    <Slider Width="160" Height="Auto" x:Name="sldPatInDiam" TickPlacement="None" LargeChange="50" Maximum="3000" Minimum="500" SmallChange="10" Value="1000"/>
+                                    <Label  Margin="4,0,4,0" Width="60" Height="Auto" Content="0"/>
+                                </StackPanel>
+                                <StackPanel Width="Auto" Height="Auto" Orientation="Horizontal" Margin="0,4,0,4">
+                                    <Label Margin="4,0,4,0" Width="60" Height="Auto" Content="Rotation"/>
+                                    <Slider Width="160" Height="Auto" x:Name="sldPatRotation" Maximum="360"/>
+                                    <Label  Margin="4,0,4,0" Width="60" Height="Auto" Content="0"/>
+                                </StackPanel>
+                                <StackPanel Width="Auto" Height="Auto" Orientation="Horizontal" Margin="0,4,0,4">
+                                    <Label Margin="4,0,4,0" Width="60" Height="Auto" Content="Angle"/>
+                                    <Slider Width="160" Height="Auto" x:Name="sldPatAngle" Maximum="360" Value="90"/>
+                                    <Label  Margin="4,0,4,0" Width="60" Height="Auto" Content="0"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Width="Auto" Height="Auto" Orientation="Horizontal">
+                            <StackPanel Width="Auto" Height="Auto" Orientation="Horizontal" Margin="0,0,40,0">
+                                <Label Margin="4,0,4,0" Width="60" Height="Auto" Content="Thick" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                                <Slider x:Name="sldLineThick" Width="40" Height="Auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </StackPanel>
+                            <CheckBox x:Name="chkFigProperties" Width="Auto" Height="Auto" Content="Show Properties" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel Margin="0,6,0,6" Width="Auto" Height="Auto">
+                            <StackPanel Width="Auto" Height="Auto" Orientation="Horizontal" Margin="2,0,2,0">
+                                <Border x:Name="btnDelActiveFig" Width="Auto" Height="30" BorderBrush="#FF000000" BorderThickness="1,1,1,1" CornerRadius="2,2,2,2" Margin="2,0,2,0">
+                                    <Label Width="Auto" Height="Auto" Content="Delete" FontWeight="Normal" Margin="0,0,0,0"/>
+                                </Border>
+                                <Border x:Name="btnDeleteAllFig" Width="Auto" Height="30" BorderBrush="#FF000000" BorderThickness="1,1,1,1" CornerRadius="2,2,2,2" Margin="2,0,2,0">
+                                    <Label Width="Auto" Height="Auto" Content="Clear" FontWeight="Normal" Margin="0,0,0,0"/>
+                                </Border>
+                                <Border x:Name="btnColor" Width="Auto" Height="30" BorderBrush="#FF000000" BorderThickness="1,1,1,1" CornerRadius="2,2,2,2" HorizontalAlignment="Center" Margin="2,0,2,0" VerticalAlignment="Center">
+                                    <Label Width="Auto" Height="Auto" Content="Color" FontWeight="Normal" Margin="0,0,0,0"/>
+                                </Border>
+                                <Border x:Name="btnUndo" Width="Auto" Height="30" BorderBrush="#FF000000" BorderThickness="1,1,1,1" CornerRadius="2,2,2,2" Margin="2,0,2,0">
+                                    <Label Width="Auto" Height="Auto" Content="Undo" FontWeight="Normal" Margin="0,0,0,0"/>
+                                </Border>
+                                <Border x:Name="btnRedo" Width="Auto" Height="30" BorderBrush="#FF000000" BorderThickness="1,1,1,1" CornerRadius="2,2,2,2" Margin="2,0,2,0">
+                                    <Label Width="Auto" Height="Auto" Content="Redo" FontWeight="Normal" Margin="0,0,0,0"/>
+                                </Border>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+                <Border Width="Auto" Height="Auto" BorderBrush="#55000000" BorderThickness="1,1,1,1" CornerRadius="4,4,4,4" Margin="4,0,4,0">
+                    <StackPanel Margin="2,2,2,2" Width="Auto" Height="Auto" x:Name="stackColorControls">
+                        <Label IsEnabled="False" HorizontalAlignment="Center" Margin="0,10,0,10" VerticalAlignment="Center" Width="Auto" Height="Auto" Content="Color Parameters" FontSize="14" FontWeight="Bold"/>
+                        <StackPanel Width="Auto" Height="Auto" Orientation="Horizontal" Margin="0,0,0,6">
+                            <Label Width="138" Height="Auto" Content="Red" FontWeight="Normal"/>
+                            <Slider Width="340" Height="Auto" x:Name="sldGainR" Value="1" LargeChange="0.3" Maximum="2" Background="{x:Null}"/>
+                        </StackPanel>
+                        <StackPanel Width="Auto" Height="Auto" Orientation="Horizontal" Margin="0,0,0,6">
+                            <Label Width="138" Height="Auto" Content="Green" FontWeight="Normal"/>
+                            <Slider Width="340" Height="Auto" x:Name="sldGainG" Value="1" LargeChange="0.3" Maximum="2" Background="{x:Null}"/>
+                        </StackPanel>
+                        <StackPanel Width="Auto" Height="Auto" Orientation="Horizontal" Margin="0,0,0,6">
+                            <Label Width="138" Height="Auto" Content="Blue" FontWeight="Normal"/>
+                            <Slider Width="340" Height="Auto" x:Name="sldGainB" Value="1" LargeChange="0.3" Maximum="2" Background="{x:Null}"/>
+                        </StackPanel>
+                        <StackPanel Height="Auto" Orientation="Horizontal" Width="Auto" Margin="0,0,0,6">
+                            <Label Width="138" Height="Auto" Content="Saturation" FontWeight="Normal"/>
+                            <Slider Width="340" Height="Auto" x:Name="sldSaturation" Value="1" LargeChange="0.3" Maximum="2" Background="{x:Null}"/>
+                        </StackPanel>
+                        <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0,0,6" Width="Auto">
+                            <Label Width="138" Height="Auto" Content="Brightness" FontWeight="Normal"/>
+                            <Slider Width="340" Height="Auto" x:Name="sldBrightness" Value="0" LargeChange=".3" Maximum="300" Minimum="-300" SmallChange=".1" Background="{x:Null}"/>
+                        </StackPanel>
+                        <StackPanel Height="Auto" Orientation="Horizontal" Width="Auto" Margin="0,0,0,6">
+                            <Label Width="138" Height="Auto" Content="Contrast" FontWeight="Normal"/>
+                            <Slider Width="340" Height="Auto" x:Name="sldContrast" Value="1" LargeChange="0.3" Maximum="2" Background="{x:Null}"/>
+                        </StackPanel>
+                        <StackPanel Height="Auto" Orientation="Horizontal" Width="Auto">
+                            <Label Width="138" Height="Auto" Content="Gamma" FontWeight="Normal"/>
+                            <Slider Width="340" Height="Auto" x:Name="sldGamma" Value="1" LargeChange="0.3" Maximum="2" Background="{x:Null}"/>
+                        </StackPanel>
+                        <Border x:Name="btnDefaultVal" Width="Auto" Height="Auto" BorderBrush="#FF000000" BorderThickness="1,1,1,1" CornerRadius="2,2,2,2" HorizontalAlignment="Center" Margin="0,10,0,4" VerticalAlignment="Center">
+                            <Label Width="Auto" Height="Auto" Content="Default" FontWeight="Normal" Margin="0,0,0,0"/>
+                        </Border>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Center" Margin="0,4,0,10" Width="Auto" Height="Auto" Orientation="Horizontal">
+                <Border x:Name="btnOpenImage" Width="Auto" Height="Auto" BorderBrush="#FF000000" BorderThickness="1,1,1,1" CornerRadius="2,2,2,2" Margin="5,0,5,0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Label Width="Auto" Height="Auto" Content="Open image ..." FontWeight="Normal"/>
+                </Border>
+                <Border x:Name="btnSaveImage" Width="Auto" Height="Auto" BorderBrush="#FF000000" BorderThickness="1,1,1,1" CornerRadius="2,2,2,2" Margin="5,0,5,0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Label Width="Auto" Height="Auto" Content="Save image" FontWeight="Normal"/>
+                </Border>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

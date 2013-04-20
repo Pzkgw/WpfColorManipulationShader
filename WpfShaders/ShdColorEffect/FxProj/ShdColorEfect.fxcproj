@@ -1,0 +1,98 @@
+<project>
+  <current_configuration value="Debug" />
+  <configurations>
+    <configuration name="Debug">
+      <settings category="Project\Direct3D\HLSL Compiler">
+        <CompilerOptions value="" />
+      </settings>
+      <settings category="Project\OpenGL\CgCompiler">
+        <CompilerOptions value="" />
+      </settings>
+      <settings category="Project\Paths">
+        <Includes value="" />
+        <Models value="" />
+        <Scripts value="" />
+        <Shaders value="" />
+        <Textures value="" />
+      </settings>
+      <settings category="Project\Settings">
+        <BindLightToUnboundMaterials value="False" />
+      </settings>
+      <settings category="Project\COLLADA Common Profile">
+        <EnvironmentMap value="" />
+        <DisableCommonProfileTransparency value="False" />
+      </settings>
+    </configuration>
+    <configuration name="Release">
+      <settings category="Project\Direct3D\HLSL Compiler">
+        <CompilerOptions value="" />
+      </settings>
+      <settings category="Project\OpenGL\CgCompiler">
+        <CompilerOptions value="" />
+      </settings>
+      <settings category="Project\Paths">
+        <Includes value="F:\ActiveProjects\ShaderEffects\DesaturateEffect\Shaders\CgFX\include;F:\ActiveProjects\ShaderEffects\DesaturateEffect\Shaders\HLSL\include;F:\ActiveProjects\ShaderEffects\DesaturateEffect\Shaders\CgFX;" />
+        <Models value="F:\ActiveProjects\ShaderEffects\DesaturateEffect\Shaders\COLLADA;F:\ActiveProjects\ShaderEffects\DesaturateEffect\Shaders\models;" />
+        <Scripts value="" />
+        <Shaders value="F:\ActiveProjects\ShaderEffects\DesaturateEffect\Shaders\COLLADA;F:\ActiveProjects\ShaderEffects\DesaturateEffect\Shaders\CgFX\include;F:\ActiveProjects\ShaderEffects\DesaturateEffect\Shaders\CgFX;F:\ActiveProjects\ShaderEffects\DesaturateEffect\Shaders\HLSL\include;F:\ActiveProjects\ShaderEffects\DesaturateEffect\Shaders\HLSL;" />
+        <Textures value="F:\ActiveProjects\ShaderEffects\DesaturateEffect\Shaders\textures;" />
+      </settings>
+      <settings category="Project\Settings">
+        <BindLightToUnboundMaterials value="False" />
+      </settings>
+      <settings category="Project\COLLADA Common Profile">
+        <EnvironmentMap value="" />
+        <DisableCommonProfileTransparency value="False" />
+      </settings>
+      <settings category="Project\Direct3D10\HLSL Compiler">
+        <CompilerOptions value="" />
+      </settings>
+    </configuration>
+  </configurations>
+  <assetFile uri="Document1.dae" referenced="False" />
+  <assetFile uri="Document2.dae" referenced="False" />
+  <assetFile uri="../../../../../../test/WpfShaders/ShadersLib/ShdColorEfect/FxProj/Document1.dae" referenced="True" />
+  <activeAssetCollection uri="Document1.dae" />
+  <customConfigurations>
+    <FXComposer.Scene.Services.FXRenderPortService>
+      <defaultScene sceneUri="Document1.dae#DefaultScene" />
+      <camera type="Top" scene="Document1.dae#DefaultScene">
+        <focallength>8.968762</focallength>
+        <fov>40</fov>
+        <zoomrect>0 0 1 1</zoomrect>
+        <viewtransform>1 0 0 0 0 5.960464E-08 -0.9999999 0 0 0.9999999 5.960464E-08 0 0 8.968762 0 1 </viewtransform>
+      </camera>
+      <camera type="Front" scene="Document1.dae#DefaultScene">
+        <focallength>8.968762</focallength>
+        <fov>40</fov>
+        <zoomrect>0 0 1 1</zoomrect>
+        <viewtransform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 8.968762 1 </viewtransform>
+      </camera>
+      <camera type="Right" scene="Document1.dae#DefaultScene">
+        <focallength>8.968762</focallength>
+        <fov>40</fov>
+        <zoomrect>0 0 1 1</zoomrect>
+        <viewtransform>5.960464E-08 0 -0.9999999 0 0 1 0 0 0.9999999 0 5.960464E-08 0 8.968762 0 0 1 </viewtransform>
+      </camera>
+      <camera type="Perspective" scene="Document1.dae#DefaultScene">
+        <focallength>4.768859</focallength>
+        <fov>40</fov>
+        <zoomrect>0 0 1 1</zoomrect>
+        <viewtransform>0.5459788 -3.237845E-07 -0.837799 0 -0.7117707 0.5274723 -0.4638487 0 0.4419158 0.8495722 0.2879884 0 2.107446 4.051522 1.373368 1 </viewtransform>
+      </camera>
+      <renderPort name="Render" />
+    </FXComposer.Scene.Services.FXRenderPortService>
+    <FXComposer.Scene.Services.FXSceneService>
+      <grid_settings sceneUri="Document1.dae#DefaultScene">
+        <show_grid value="True" />
+        <axes_color value="0, 0, 0, 1" />
+        <size value="4.100686" />
+        <major_ticks_color value="0.25, 0.25, 0.25, 1" />
+        <major_tick_every_nth value="10" />
+        <ticks_color value="0.425, 0.425, 0.425, 1" />
+        <ticks_interval_in_units value="0.08201372" />
+      </grid_settings>
+      <background_color color="0.5 0.5 0.5 0" />
+    </FXComposer.Scene.Services.FXSceneService>
+  </customConfigurations>
+</project>
