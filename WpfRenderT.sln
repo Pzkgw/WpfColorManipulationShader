@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfRenderT", "WpfRenderT.csproj", "{816FB1C7-FA36-467D-980E-E1ABA7F4C7A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RsaGlobalInterfaces", "..\..\RSA\RsaGlobals\RsaGlobalInterfaces\RsaGlobalInterfaces.csproj", "{7BBDD1F4-217E-4017-AE61-055672B098CC}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,16 +23,6 @@ Global
 		{816FB1C7-FA36-467D-980E-E1ABA7F4C7A7}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{816FB1C7-FA36-467D-980E-E1ABA7F4C7A7}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
 		{816FB1C7-FA36-467D-980E-E1ABA7F4C7A7}.Release|Win32.ActiveCfg = Debug|Any CPU
-		{7BBDD1F4-217E-4017-AE61-055672B098CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7BBDD1F4-217E-4017-AE61-055672B098CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7BBDD1F4-217E-4017-AE61-055672B098CC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{7BBDD1F4-217E-4017-AE61-055672B098CC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{7BBDD1F4-217E-4017-AE61-055672B098CC}.Debug|Win32.ActiveCfg = Debug|Any CPU
-		{7BBDD1F4-217E-4017-AE61-055672B098CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7BBDD1F4-217E-4017-AE61-055672B098CC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7BBDD1F4-217E-4017-AE61-055672B098CC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{7BBDD1F4-217E-4017-AE61-055672B098CC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{7BBDD1F4-217E-4017-AE61-055672B098CC}.Release|Win32.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
