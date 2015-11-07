@@ -1,4 +1,4 @@
 WpfColorManipulationShader
 ==========================
 
-Wpf application that does color manipulation (RGB gain, brightness, saturation, contrast, gamma ) 
+Immage settings for: RGB gain, brightness, saturation, contrast, gamma
